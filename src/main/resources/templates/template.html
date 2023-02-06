@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="invoice-box">
+		<table>
+			<tr class="top">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td> 
+								<img src="adidas.png" style="width:140px;margin-left:-5px" />
+							</td>
+							<td>
+								Invoice #: {{id}}
+								<br /> Created: {{createdDate}}
+								<br /> Due: {{dueDate}} </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr class="information">
+				<td colspan="2">
+					<table>
+						<tr>
+							<td>Sparksuite, Inc.
+								<br /> 12345 Sunny Road
+								<br /> Sunnyville, CA 12345 
+							</td>
+							<td> Acme Corp.
+								<br /> {{customer.name}}
+								<br /> {{customer.email}} 
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr class="heading">
+				<td>Payment Method</td>
+				<td>Check #</td>
+			</tr>
+			<tr class="details">
+				<td>Check</td>
+				<td>{{checkNo}}</td>
+			</tr>
+			<tr class="heading">
+				<td>Item</td>
+				<td>Price</td>
+			</tr>
+
+			{{#each items}}
+			<tr class="item">
+				<td>{{name}}</td>
+				<td>{{price}}</td>
+			</tr>
+			{{/each}}
+			<tr class="total">
+				<td></td>
+				<td>Total: $385.00</td>
+			</tr>
+		</table>
+	</div>
+
+	<div style='height:40px;page-break-before: always;'></div>
+	
+	<div class="invoice-box">
+		<div style=''>
+			<h2>Customize Your Editor</h2>
+
+			<p>Modular build and&nbsp;<a href="https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_configuration">numerous configuration options</a>&nbsp;give you nearly endless possibilities to customize CKEditor. Replace the content of your&nbsp;<code><a href="https://ckeditor.com/latest/config.js">config.js</a></code>&nbsp;file with the following code and refresh this page (<strong>remember to clear the browser cache</strong>)!</p>
+		</div>
+	</div>
+</body>
+
+</html>

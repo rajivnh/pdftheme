@@ -1,0 +1,1 @@
+Spring boot project for OpenHtml2Pdf & Handlerbar PDF generation solution

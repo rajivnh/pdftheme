@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf');
+}
+
+.invoice-box {
+	max-width: 800px;
+	margin: auto;
+	padding: 30px;
+	border: 1px solid #eee;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Montserrat';
+	color: #555;
+}
+
+.invoice-box table {
+	width: 100%;
+	line-height: inherit;
+	text-align: left;
+}
+
+.invoice-box table td {
+	padding: 5px;
+	vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2) {
+	text-align: right;
+}
+
+.invoice-box table tr.top table td {
+	padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+	font-size: 35px;
+	line-height: 35px;
+	color: #333;
+}
+
+.invoice-box table tr.information table td {
+	padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+	border-bottom: 1px solid #a2a2a2;
+	font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+	padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td {
+	border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+	border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(2) {
+	border-top: 2px solid #eee;
+	font-weight: bold;
+}
+
+.invoice-box.rtl {
+	direction: rtl;
+	font-family: 'Montserrat';
+}
+
+.invoice-box.rtl table {
+	text-align: right;
+}
+
+.invoice-box.rtl table tr td:nth-child(2) {
+	text-align: left;
+}
